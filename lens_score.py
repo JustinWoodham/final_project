@@ -17,6 +17,10 @@ references = [[s] for s in df["Reference"].tolist()]
 lens_path = download_model("davidheineman/lens")
 lens_model = LENS(lens_path, rescale=True)
 # run using CPU, saves package issue with CUDA
-scores = lens_model.score(sources, predictions, references, devices=[0])
+scores = lens_model.score(sources, predictions, references, devices =[0])
 
 print(np.mean(scores))
+
+
+# if for any reason lens fails, possibly due to a cache wipe, run command, below with a test csv, and then set devices = None or 0 or 1 or remove
+# python lens_score.py lens_test.csv
