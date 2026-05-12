@@ -41,8 +41,7 @@ final_project/
 │   ├── lens_score_API.py         — LENS scoring script for API pipeline outputs
 │   ├── lens_score_GPU.py         — LENS scoring script for GPU pipeline outputs
 │   ├── metricQualityFunc.ipynb   — Selects few-shot examples by LENS/compression quality
-│   ├── QA_example_selection.ipynb — Samples outputs by LENS percentile for qualitative analysis
-│   └── QA_examples.csv           — Qualitative analysis examples (top/median/bottom LENS)
+│   └── QA_example_selection.ipynb — Samples outputs by LENS percentile for qualitative analysis
 │
 ├── csv/                          — Experiment result CSVs and few-shot selection outputs
 ├── datasets/                     — SimPA, Admin-It-L2, ClearText datasets
