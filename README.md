@@ -46,7 +46,7 @@ final_project/
 ├── csv/                          — Experiment result CSVs and few-shot selection outputs
 ├── datasets/                     — SimPA, Admin-It-L2, ClearText datasets
 ├── requirements-conda.txt
-└── requirements-pip.txt
+└── requirements-lens.txt
 ```
  
 ---
