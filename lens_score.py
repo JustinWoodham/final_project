@@ -23,4 +23,4 @@ print(np.mean(scores))
 
 
 # if for any reason lens fails, possibly due to a cache wipe, run command, below with a test csv, and then set devices = None or 0 or 1 or remove
-# python lens_score.py csv\lens_test.csv
+# python lens_score.py csv/lens_test.csv
