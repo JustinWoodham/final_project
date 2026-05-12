@@ -7,7 +7,7 @@ from lens import download_model, LENS
 csv_path = sys.argv[1] if len(sys.argv) > 1 else "lm_output.csv"
 df = pd.read_csv(csv_path)
 
-# Match the column names from your notebook's CSV output
+# Match the column names from notebook's CSV output
 sources = df["Original"].tolist()
 predictions = df["LM Output"].tolist()
 #nested list
@@ -16,7 +16,6 @@ references = [[s] for s in df["Reference"].tolist()]
 #Load LENS and score
 lens_path = download_model("davidheineman/lens")
 lens_model = LENS(lens_path, rescale=True)
-# run using CPU, saves package issue with CUDA
 scores = lens_model.score(sources, predictions, references, devices =[0])
 
 print(np.mean(scores))

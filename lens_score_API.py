@@ -19,7 +19,6 @@ references = [[s] for s in df["Reference"].tolist()]
 #Load LENS and score
 lens_path = download_model("davidheineman/lens")
 lens_model = LENS(lens_path, rescale=True)
-# run using CPU, saves package issue with CUDA
 scores = lens_model.score(sources, predictions, references, devices =[0])
 
 # used to gather few-shot quality metrics
