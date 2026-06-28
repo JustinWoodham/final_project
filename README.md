@@ -1,6 +1,5 @@
 # Automatic Text Simplification of Public Administration Texts with Large Language Models
  
-**Student:** Justin Woodham  
 **Module:** CM3203 — One Semester Individual Project  
 **Institution:** Cardiff University, School of Computer Science
  
